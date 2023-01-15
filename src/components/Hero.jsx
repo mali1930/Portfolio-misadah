@@ -16,12 +16,12 @@ const Hero = () => {
               <span className="text-orange-600">
                 Frontend Software Engineer
               </span>{" "}
-              with 1 year of experience delivering
-              high-impact web development services. Skilled at using programming
-              languages to create outstanding designs for excellent
-              user-experience. I have a solid understanding of web development
-              technologies and implement user-friendly, responsive, and visually
-              appealing web applications. Here is a bit more{" "}
+              with 1 year of experience delivering high-impact web development
+              services. Skilled at using programming languages to create
+              outstanding designs for excellent user-experience. I have a solid
+              understanding of web development technologies and implement
+              user-friendly, responsive, and visually appealing web
+              applications. Here is a bit more{" "}
               <span className="text-orange-600">about me....</span>
             </p>
           </div>

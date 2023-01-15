@@ -17,17 +17,17 @@ const Modal = () => {
         >
           <AiTwotoneMail size={50} className="dark:bg-white text-black " />
         </button>
-       
-          {modal && (
-            //{/* modal */}
-            <div>
+
+        {modal && (
+          //{/* modal */}
+          <div>
             {/* overlay */}
-             <Zoom>
-              <div className=" w-full h-[100vh]  fixed top-0 left-0 right-0 bottom-0">
+            <Zoom>
+              <div className=" w-full   fixed top-0 left-0 right-0 bottom-0">
                 {/* modal content */}
                 <div className="flex  items-center justify-center h-screen  ">
-                  <div className=" shadow-2xl rounded-lg flex justify-center  w-[60%] max-w-full  h-[70vh] ">
-                    <div className="w-[50%]  bg-gray-200 text-black">
+                  <div className=" shadow-2xl px-1  rounded-lg flex justify-center  w-[80%] max-w-full   ">
+                    <div className="w-[100%]  md:block hidden  bg-gray-200 text-black">
                       <div className="mt-10 p-4 leading-7">
                         <h1 className="text-3xl font-bold text-center mb-2">
                           Here's a bit about me.
@@ -46,7 +46,7 @@ const Modal = () => {
                             projects and solve engineering problems every day
                             with HTML5, CSS3, JavaScript, and React.
                           </p>
-                          <div className="flex gap-10 mt-2 ">
+                          <div className="flex flex-wrap gap-10 mt-4 ">
                             <img
                               src="https://logospng.org/download/html-5/logo-html-5-512.png"
                               className="w-[60px]"
@@ -71,12 +71,12 @@ const Modal = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-[50%] text-white relative bg-zinc-900">
-                      <div className="mt-10 text-center">
-                        <h1 className="text-3xl font-bold mb-2">
+                    <div className="w-[100%]  text-white relative bg-zinc-900">
+                      <div className="mt-10 text-center px-2">
+                        <h1 className="md:text-3xl text-xl font-bold mb-2">
                           Let's have a chat!
                         </h1>
-                        <p className="text-lg font-bold mb-1">
+                        <p className="md:text-lg text-md font-bold mb-1">
                           I'm currently open to new opportunities.
                         </p>
                       </div>
@@ -103,13 +103,13 @@ const Modal = () => {
                             className="outline-0 bg-zinc-900 mb-8 border-b-4 h-[100px] text-white w-[100%]"
                             type="text"
                           ></textarea>
-                          <button className="bg-purple-700 py-4 px-24 cursor-pointer text-white">
+                          <button className="bg-purple-700 py-2 px-6 cursor-pointer text-white">
                             Send it my way
                           </button>
                         </div>
                       </form>
                       <button
-                        className="text-4xl absolute top-2 right-4"
+                        className="text-4xl absolute top-10 right-9"
                         onClick={toggleModal}
                       >
                         X
@@ -118,10 +118,10 @@ const Modal = () => {
                   </div>
                 </div>
               </div>
-              </Zoom>
-            </div>
-          )}
-   
+            </Zoom>
+          </div>
+        )}
+
         <div onClick={toggleModal}></div>
       </div>
     </>
