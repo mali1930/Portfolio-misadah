@@ -52,7 +52,7 @@ const Project = () => {
               <img
                 src={item.img}
                 alt="chat"
-                className="w-[100%] md:w-[70%] h-[70vh]  border-2 rounded-md "
+                className="w-[100%]  md:w-[74%] h-[72vh]  border-2 rounded-md "
               />
               {/* <div>
               <p>{item.title}</p>

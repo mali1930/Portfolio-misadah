@@ -23,12 +23,12 @@ const Modal = () => {
           <div>
             {/* overlay */}
             <Zoom>
-              <div className=" w-full   fixed top-0 left-0 right-0 bottom-0">
+              <div className=" w-full    ">
                 {/* modal content */}
                 <div className="flex  items-center justify-center h-screen  ">
-                  <div className=" shadow-2xl px-1  rounded-lg flex justify-center  w-[80%] max-w-full   ">
-                    <div className="w-[100%]  md:block hidden  bg-gray-200 text-black">
-                      <div className="mt-10 p-4 leading-7">
+                  <div className=" shadow-xl  rounded-lg flex justify-center  w-[90%] max-w-full   ">
+                    <div className=" w-[100%] md:block hidden  bg-gray-200 text-black">
+                      <div className="mt-20 p-4 leading-7">
                         <h1 className="text-3xl font-bold text-center mb-2">
                           Here's a bit about me.
                         </h1>
@@ -71,8 +71,8 @@ const Modal = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-[100%]  text-white relative bg-zinc-900">
-                      <div className="mt-10 text-center px-2">
+                    <div className="w-[100%] text-white relative bg-zinc-900">
+                      <div className="mt-12 text-center px-2">
                         <h1 className="md:text-3xl text-xl font-bold mb-2">
                           Let's have a chat!
                         </h1>
@@ -93,7 +93,7 @@ const Modal = () => {
                           <label className="block text-xl ">Email</label>
                           <input
                             type="email"
-                            required
+                            requiredg
                             className=" bg-zinc-900 w-[100%] mb-12 text-white outline-0 border-b-4 h-[40px] transition-all"
                           />
                         </div>
@@ -109,7 +109,7 @@ const Modal = () => {
                         </div>
                       </form>
                       <button
-                        className="text-4xl absolute top-10 right-9"
+                        className="text-4xl absolute top-6 right-4"
                         onClick={toggleModal}
                       >
                         X
