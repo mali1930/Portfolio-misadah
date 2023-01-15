@@ -2,34 +2,34 @@ import React from "react";
 import movie from "../assets/Filmpire.png";
 import chat from "../assets/chat-app.png";
 import amazon from "../assets/amazon-clone.png";
-import Roll from 'react-reveal/Roll';
+
 import Zoom from "react-reveal/Zoom";
-import bird from "../assets/flappy-bird-cover.jpg"
+import bird from "../assets/flappy-bird-cover.jpg";
 
 const Project = () => {
   const projects = [
     {
       id: 1,
       title: "Filmpire Movies",
-      description: "Building html css js react redux with TMBD movies API",
+
       img: movie,
     },
     {
       id: 2,
       title: "Amazon Clone",
-      description: "Building html css js react redux with TMBD movies API",
+
       img: amazon,
     },
     {
       id: 3,
       title: "Chat-app",
-      description: "Building html css js react redux with TMBD movies API",
+
       img: chat,
     },
     {
       id: 4,
       title: "Flappy Bird",
-      description: "Building html css js react redux with TMBD movies API",
+
       img: bird,
     },
   ];
@@ -37,30 +37,31 @@ const Project = () => {
     <div className="mt-32 mb-20">
       <div className="text-center">
         <Zoom>
-          <h1 className="text-3xl md:text-4xl font-bold">
+          <h1 className="text-3xl md:text-4xl mb-20 font-bold">
             Here are my <span className="text-orange-600">Projects</span>
           </h1>
         </Zoom>
       </div>
-      <div className="flex flex-col justify-center cursor-pointer shadow-slate-600 drop-shadow-xl">
-        <Roll left>
-          {projects.map((item) => (
-            <div
-              key={item.id}
-              className="flex flex-col items-center  justify-center mt-12 "
-            >
-              <img
-                src={item.img}
-                alt="chat"
-                className="w-[100%]  md:w-[74%] h-[72vh]  border-2 rounded-md "
-              />
-              {/* <div>
-              <p>{item.title}</p>
-              <p>{item.description}</p>
-            </div> */}
+
+      <div className="flex flex-col gap-20 justify-center cursor-pointer shadow-slate-300 drop-shadow-xl md:px-10">
+        {projects.map((item) => (
+          <div
+            key={item.id}
+            class="group relative cursor-pointer items-center justify-center overflow-hidden "
+          >
+            <div class="h-[80vh] w-[100%] ">
+              <img class="h-full w-full   " src={item.img} alt="" />
             </div>
-          ))}
-        </Roll>
+            <div class="absolute w-[100%] h-[100%] inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class=" text-xl mb-3 font-bold text-white"> {item.title}</h1>
+
+              <button class="rounded-full bg-neutral-900 py-2 px-3 fon text-sm capitalize text-white shadow shadow-black/60">
+                See More
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
